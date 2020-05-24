@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "app5/base.html" %}
+
+{% block content_block %}
+from alpha_vantage.timeseries import TimeSeries
+	from pprint import pprint
+	ts = TimeSeries(key='3HSDXSTQYELEBF6P', output_format='Pandas')
+	data, meta_data = ts.get_intraday(symbol='MSFT',interval='1min', outputsize='full')
+	pprint(data.head(2))
+{% endblock %}
