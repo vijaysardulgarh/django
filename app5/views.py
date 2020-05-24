@@ -18,7 +18,7 @@ def home(request):
 	#data['4. close'].plot()
 	#plt.title('Intraday TimeSeries Google')
 	#plt.show()
-	#key='3HSDXSTQYELEBF6P'
+
 
 
 
